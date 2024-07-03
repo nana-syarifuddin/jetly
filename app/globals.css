@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 body {
-  --toastify-color-success: #ff735c;
+  --toastify-color-success: #FF735C;
 }

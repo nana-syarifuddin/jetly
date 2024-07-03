@@ -75,7 +75,7 @@ export default function Home() {
               setFrom('');
               setTo('');
             }}
-            className="bg-[#F87171] text-white px-4 py-2 rounded-md"
+            className="bg-[#FF735C] text-white px-4 py-2 rounded-md"
           >
             Reset
           </button>

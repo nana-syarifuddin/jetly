@@ -148,7 +148,7 @@ const EditLink = ({ linkId }: { linkId: string }) => {
         <button type="submit" className="bg-[#FF735C] text-white px-4 py-2 rounded-md shadow-2xl">
           Edit Tautan
         </button>
-        <button type="button" onClick={() => handleDelete(linkId)} className="bg-red-700 text-white px-4 py-2 rounded-md shadow-2xl">
+        <button type="button" onClick={() => handleDelete(linkId)} className="bg-red-500 text-white px-4 py-2 rounded-md shadow-2xl">
           Hapus Tautan
         </button>
       </div>

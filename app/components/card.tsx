@@ -2,6 +2,7 @@ import { RiCalendarEventLine, RiEyeLine, RiFileCopyLine } from "react-icons/ri";
 import { LinkType } from "../dashboard/kelola-tautan/page";
 import Link from "next/link";
 import { dateFormater } from "@/libs/dateFormater";
+import { RiEditBoxLine } from "react-icons/ri";
 
 const Card = ({ link }: { link: LinkType }) => {
     return (
@@ -17,8 +18,8 @@ const Card = ({ link }: { link: LinkType }) => {
               </Tooltip>
             </div>
             <div>
-              <Link href={`/dashboard/ubah-tautan/${link.id}`} className="hover:cursor-pointer text-blue-400 underline">
-                Edit
+              <Link href={`/dashboard/ubah-tautan/${link.id}`} className="">
+              <RiEditBoxLine />
               </Link>
             </div>
           </div>

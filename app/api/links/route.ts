@@ -89,7 +89,7 @@ export const GET = async (req: NextRequest) => {
         where: {
           userId: session.user.id,
           AND: {
-            shortUrl: {
+            url: {
               contains: search,
               mode: 'insensitive',
             },

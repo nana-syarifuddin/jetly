@@ -1,4 +1,8 @@
 import { Metadata } from 'next';
+import { Montserrat } from 'next/font/google';
+import '../globals.css';
+
+const montserrat = Montserrat({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Jetly',
@@ -8,7 +12,11 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={montserrat.className}>
+        <div className="bg-[url('/bg2.png')]">
+          {children}
+        </div>
+        </body>
     </html>
   );
 }

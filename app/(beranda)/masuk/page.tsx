@@ -1,8 +1,13 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import LoginAccount from './_login-account';
+import { getServerAuthSession } from '@/libs/auth';
+import { redirect } from 'next/navigation';
 
-export default function Masuk() {
+export default async function Masuk() {
+  const session = await getServerAuthSession();
+
+  if(session) return redirect('/dashboard');
   return (
     <section className="p-6">
       <div className="md:flex md:items-center md:justify-center">
